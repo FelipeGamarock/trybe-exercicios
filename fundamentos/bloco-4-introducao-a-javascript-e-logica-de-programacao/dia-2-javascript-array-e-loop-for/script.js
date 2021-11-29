@@ -1,14 +1,17 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// // Exercicio 1
 //  for (let number of numbers) {
 //      console.log(number)
 //  }
 
+// Exercicio 2
 // let sum = 0
 // for (let number of numbers) {
 //     sum = sum + number
 // }
 // console.log(sum)
 
+// Exercicio 3
 // let sum = 0;
 // for (let number of numbers) {
 //     sum = sum + number;
@@ -16,6 +19,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // media = sum / numbers.length
 // console.log(media)
 
+// Exercicio 4
 // let sum = 0
 // for (index = 0 ; index < numbers.length ; index += 1) {
 //     sum += numbers[index]
@@ -28,6 +32,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //     console.log("Valor igual ou menor que 20")
 // }
 
+// Exercicio 5
 // let comparador = 0
 // for (index = 0 ; index < numbers.length ; index += 1) {
 //     if (numbers[index] > comparador) {
@@ -36,6 +41,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 // console.log("O maior numero é o", comparador );
 
+// Exercicio 6
 // let impares = 0
 // let pares = 0
 // for (index = 0 ; index < numbers.length ; index += 1) {
@@ -49,6 +55,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // console.log("existem", pares, "numeros pares");
 // console.log("existem", impares, "numeros impares");
 
+// Exercicio 7
 // let menor = numbers[0];
 // for (let index = 1 ; index < numbers.length ; index += 1) {
 //     if (numbers[index] < menor) {
@@ -57,12 +64,13 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 // console.log("O menor numero é o", menor);
 
-let sequencia = []
-for (let index = 0 ; index < 25 ; index += 1) {
-    sequencia.push(index+1)
-}
-console.log(sequencia);
-for (let cont = 0 ; cont < sequencia.length ; cont += 1) {
-    let metade = sequencia[cont] / 2
-    console.log("A metade de", sequencia[cont], "é", metade);
-}
+// Exercicio 8 e 9
+// let sequencia = []
+// for (let index = 0 ; index < 25 ; index += 1) {
+//     sequencia.push(index+1)
+// }
+// console.log(sequencia);
+// for (let cont = 0 ; cont < sequencia.length ; cont += 1) {
+//     let metade = sequencia[cont] / 2
+//     console.log("A metade de", sequencia[cont], "é", metade);
+// }
