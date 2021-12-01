@@ -41,18 +41,31 @@ let n = 7;
 // }
 
 // Exercicio 4
-for (let index = 1 ; index <= n ; index += 2) {
-    let sequencia = "";
-    for (let cont = 0 ; cont < ((n-index)/2) ; cont += 1 ){
-        sequencia += " ";
-    }
-    for (let marc = 0 ; marc < index ; marc += 1) {
-        sequencia += "*"
-    }
-    console.log(sequencia);
-}
+// for (let index = 1 ; index <= n ; index += 2) {
+//     let sequencia = "";
+//     for (let cont = 0 ; cont < ((n-index)/2) ; cont += 1 ){
+//         sequencia += " ";
+//     }
+//     for (let marc = 0 ; marc < index ; marc += 1) {
+//         sequencia += "*"
+//     }
+//     console.log(sequencia);
+// }
 
-
+// Exercicio Bonus 1
+// for (let index = 1 ; index <= n ; index += 2) {
+//     let sequencia = "";
+//     for (let cont = 0 ; cont < ((n-index)/2) ; cont += 1 ){
+//         sequencia += " ";
+//     }
+//     for (let marc = 0 ; marc < index ; marc += 1) {
+//         if (marc === 0 || marc === (index-1) || index === n) {
+//             sequencia += "*"
+//         } else {
+//             sequencia += " "
+//         }
+//     }
+//     console.log(sequencia);
 
 // Exercicio Bonus 2
 // let divisores = 0
