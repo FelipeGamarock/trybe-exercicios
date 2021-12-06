@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let titulo = document.createElement('h1')
+      titulo.innerText = 'Exercício 5.2 - JavaScript DOM'
+      document.body.appendChild(titulo)
+
+      let principal = document.createElement('main')
+      principal.className = 'main-content'
+      document.body.appendChild(principal)
+
+      let secao = document.createElement('section')
+      secao.className = 'center-content'
+      principal.appendChild(secao)
+
+      let texto = document.createElement('p')
+      texto.innerText = 'Esse é um texto teste'
+      secao.appendChild(texto)
+
+      let secaoEsq = document.createElement('section')
+      secaoEsq.className = 'left-content'
+      principal.appendChild(secaoEsq)
+
+      let secaoDir = document.createElement('section')
+      secaoDir.className = 'right-content'
+      principal.appendChild(secaoDir)
+
+      let imagem = document.createElement('img')
+      imagem.className = 'small-image'
+      imagem.src = 'https://picsum.photos/200'
+      secaoEsq.appendChild(imagem)
+
+      let lista = document.createElement('ul')
+      secaoDir.appendChild(lista)
+      let array = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+      for (let i = 0; i < array.length; i += 1) {
+        let listElement = document.createElement('li')
+        listElement.innerText = array[i]
+        lista.appendChild(listElement)
+      }
+
+      for (let x = 0; x < 3; x += 1) {
+        let aga3 = document.createElement('h3')
+        principal.appendChild(aga3)
+      }
+// Segunda Parte
+      titulo.className = 'title'
+
+      let agas3 = document.getElementsByTagName('h3')
+      for (let z = 0; z < agas3.length; z += 1) {
+        agas3[z].className = 'description'
+      }
+       
+      principal.removeChild(secaoEsq)
+
+      secaoDir.style.marginRight = 'auto'
+
+      secao.style.backgroundColor = 'green'
+
+      let listElements = document.getElementsByTagName('li')
+      for (let y = 0; y < listElements.length; y += 1) {
+        let element = listElements[y]
+        if (element.innerText.includes('dez')) {
+          lista.removeChild(element)
+        } 
+      }
+    </script>
+  </body>
+</html>
